@@ -1,0 +1,8 @@
+.alert-container {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .55rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 4rem 0;
+}

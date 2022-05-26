@@ -1,0 +1,24 @@
+.category-container {
+    display: flex;
+}
+
+.secondary-navbar {
+    width: 250px;
+    padding-top: 3rem;
+    
+}
+
+.card-section {
+    width: calc(100% - 250px);
+    padding: 0 .5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .secondary-navbar {
+        display: none;
+    }
+
+    .card-section {
+        width: 100%;
+    }
+}

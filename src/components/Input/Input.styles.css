@@ -1,0 +1,43 @@
+.input-default {
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-size: 1rem;
+    border-bottom: 2px solid #d1d1d1;
+    width: 100%;
+    background-color: inherit;
+}
+
+.wrap-for-input {
+    position: relative;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.input-default:focus + .label-default  {
+    top: -12px;
+    font-size: .8rem;
+    transition: all .55s;
+    opacity: .5;
+    font-weight: bold;
+}
+
+.label-up {
+    position: absolute;
+    left: 0;
+    font-weight: 500;
+    top: -12px;
+    font-size: .8rem;
+    opacity: .5;
+    font-weight: bold;
+}
+
+.label-default {
+    position: absolute;
+    top: .5rem;
+    left: 0;
+    font-weight: 500;
+    cursor: text;
+    transition: all .55s;
+
+}

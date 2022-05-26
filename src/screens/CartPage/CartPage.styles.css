@@ -1,0 +1,173 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.ammount-products-info {
+    background-color: rgb(221, 237, 252);
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(98, 179, 255);
+    border-radius: .55rem;
+}
+
+.cart-container {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.cart-item {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
+    border-radius: .55rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.del-from-cart-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-40%, -40%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.del-from-cart-btn:hover {
+    cursor: pointer;
+}
+
+.cart-item__image {
+    /* background-image: url('https://toppng.com/uploads/preview/free-transparent-background-images-white-polo-t-shirt-11562930098upvnzgvout.png'); */
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cart-item__title {
+    padding: 1rem;
+    text-transform: uppercase;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.cart-item__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+}
+
+.cart-item__quantity__title,
+.cart-item__subtotal__title {
+    font-weight: 300;
+    font-size: .9rem;
+    margin-bottom: .3rem;
+}
+
+.cart-item__quantity__wrap {
+    overflow-wrap: no-wrap;
+}
+
+.cart-item__quantity__wrap > input {
+    outline: none;
+    width: 50px;
+    height: 100%;
+    font-size: 1rem;
+    padding: 0 .3rem;
+}
+
+.cart-item__subtotal__price {
+    text-align: right;
+}
+
+.summary {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.summary__title {
+    color: rgb(165, 165, 165);
+    padding-right: .5rem;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.button-style {
+    width: 100%;
+    margin: .5rem 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: .55rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .55s;
+}
+
+.button-style:hover {
+    cursor: pointer;
+}
+
+.continue-shopping {
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+}
+
+.continue-shopping:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.checkout {
+    background-color: rgb(51, 153, 77);
+    border: 2px solid rgb(51, 153, 77);
+    color: #fff;
+}
+
+.checkout:hover {
+    background-color: #fff;
+    color: rgb(51, 153, 77);
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+}

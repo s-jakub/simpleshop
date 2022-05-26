@@ -1,0 +1,8 @@
+.card-container {
+    width: 100%;
+    display: grid;
+    gap: .5rem;
+    padding: 4rem 1.9rem;
+    max-width: 1440px;
+    margin: 0 auto
+}

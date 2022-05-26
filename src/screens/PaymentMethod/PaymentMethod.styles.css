@@ -1,0 +1,10 @@
+.radio-wrap {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.radio-item > label {
+    padding-left: 10px;
+}

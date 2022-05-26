@@ -1,0 +1,84 @@
+.newsletter {
+    width: 100%;
+    height: 30vh;
+    /* background-image: url('https://mcdn.wallpapersafari.com/medium/64/34/XBfE3A.jpg'); */
+    background-image: url('https://wallpaperaccess.com/full/2122998.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0;
+    
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.newsletter__title {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.newsletter__desc {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.newsletter__form-wrap {
+    width: 600px;
+
+}
+
+.newsletter__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 0;
+    
+}
+
+.newsletter__input {
+    display: inline-block;
+    padding: 1rem;
+    width: calc(100% - 120px);
+    outline: none;
+    border: none;
+    border-radius: .55rem 0 0 .55rem;
+}
+
+.newsletter__button {
+    width: 120px;
+    padding: calc(1rem - 2px) 2rem;
+    border: 0;
+    border-radius: 0 .55rem .55rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: white;
+    border: 2px solid black;
+    transition: all .55s;
+}
+
+.newsletter__button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 726px) {
+    .newsletter__form-wrap {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}

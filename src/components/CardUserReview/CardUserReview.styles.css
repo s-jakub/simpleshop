@@ -1,0 +1,52 @@
+.user-review {
+    width: 100%;
+    max-height: fit-content;
+    height: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.user-review:last-child {
+    margin-bottom: 0;
+}
+
+.user-review__bgc {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eee;
+    opacity: .5;
+}
+
+.user-review__blur {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    padding: 1.5rem;
+}
+
+.user-review__nickname {
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.user-review__star {
+    padding: .4rem 0;
+}
+
+.user-review__date {
+    font-size: .8rem;
+}
+
+.user-review__text {
+    background-color: rgb(221, 237, 252);
+    margin: 1.2rem 1.2rem 0 1.2rem;
+    padding: 1rem;
+    font-size: .85rem;
+    font-weight: 600;
+    color:rgb(98, 179, 255);
+    border-radius: .55rem;
+}

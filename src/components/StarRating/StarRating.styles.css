@@ -1,0 +1,26 @@
+.rating {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .rating__stars-wrapper {
+     font-size: .8rem;
+     color: #ffcd3c;
+ }
+ 
+ .rating__amount-reviews {
+     font-size: .85rem;
+     padding: 0 .3rem;
+ }
+ 
+ .star-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffcd3c;
+    width: 200px;
+}
+
+.star:hover {
+    cursor: pointer;
+}

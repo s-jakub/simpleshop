@@ -1,0 +1,138 @@
+.order-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: calc(100vh - 69px);
+    padding: 1rem 0;
+}
+
+.order-info {
+    width: 100%;
+    padding: 1rem .5rem;
+    background-color: #bde6b8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    padding: 1rem;
+}
+
+.info__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #a7cfa2;
+    width: 80px;
+    height: 80px;
+    color: #3d5f37;
+}
+
+.info__text {
+    padding: 0 1rem;
+    color: #3d5f37;
+}
+
+.info__text__title {
+    letter-spacing: .05rem;
+    padding-bottom: .8rem;
+}
+
+.info__text__desc {
+    font-weight: 500;
+    font-size: .9rem;
+    padding: .3rem .2rem;
+    text-transform: capitalize;
+}
+
+.order-wrap {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-items {
+    padding: 1rem 0;
+    width: calc(100% - 350px);
+}
+
+.order-summary {
+    padding: 1rem;
+    max-width: 300px;
+    width: 100%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #c4c4c4;
+}
+
+td, th {
+    padding: .5rem;
+}
+
+.table-summary {
+    width: 100%;
+    text-align: left;
+    background-color: #eee;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.order-summary__btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: #008000;
+    color: #fff;
+    font-weight: 600;
+}
+
+.order-summary__btn:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.red {
+    background-color: red;
+    color: white;
+
+}
+
+.green {
+    background-color: #008000;
+    color: white;
+    text-transform: none;
+}
+
+@media screen and (max-width: 868px) {
+    .order-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .info__text__desc {
+        overflow-wrap: anywhere;
+    }
+
+    .order-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-items {
+        width: 100%;
+    }
+
+    .order-summary {
+        max-width: 100%;
+    }
+}
