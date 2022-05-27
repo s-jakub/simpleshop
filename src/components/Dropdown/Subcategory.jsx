@@ -25,7 +25,12 @@ const Subcategory = ({subcategory, setObj, mainCategory, choosedSubCategory, cho
         </div>
         {isMenuClicked && <>
         {
-            subcategory.items.map((itemName, itemIdx) => <div key={itemIdx} className={`subcategory-mobile__item ${findSubcategory === itemName && choosedMainCategory === mainCategory? 'active-category' : ''}`} onClick={() => setObj({mainCategory: mainCategory, subCategory: itemName })} >{itemName}</div> )       
+            subcategory.items.map((itemName, itemIdx) => <div key={itemIdx} className={`subcategory-mobile__item ${findSubcategory === itemName && choosedMainCategory === mainCategory? 'active-category' : ''}`} 
+            
+            onClick={() => {
+              setObj({mainCategory: mainCategory, subCategory: itemName })
+              window.document.body.style.overflow = "auto";
+            }} >{itemName}</div> )       
         }
         </> }
     
